@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+	"name": "Vision",
+	"version": "1.0.0",
+	"description": "可以自动跳转来自微信的链接",
+	"author": "superiorlu",
+	"icons": {
+		"48": "images/icon.png",
+		"128": "images/icon.png"
+	},
+	"page_action": {
+		"default_icon": "images/icon.png",
+		"default_title": "自动跳转来自微信的链接",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://weixin110.qq.com/*"
+			],
+			"js": [
+				"lib/jquery-3.4.1.min.js",
+				"js/content-script.js"
+			],
+			"run_at": "document_start"
+		}
+	],
+	"permissions": [
+		"tabs",
+		"webRequest",
+		"webRequestBlocking"
+	],
+	"homepage_url": "https://github.com/superiorlu",
+	"web_accessible_resources": []
+}
