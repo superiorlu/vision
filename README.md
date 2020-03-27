@@ -1,16 +1,21 @@
 # Vision(幻视)
 
- 作为一个Chrome插件，可以自动跳转微信中访问链接时出现的“继续访问”页面。
+作为一个 Chrome 插件，可以自动跳转微信中访问链接时出现的“继续访问”页面。
 
 [![GitHub license](https://img.shields.io/github/license/superiorlu/vision.svg)](https://github.com/superiorlu/vision/blob/master/LICENSE)
 
 [![vision.gif](https://i.loli.net/2020/03/26/ebEGR24XO7mUS6Y.gif)](https://i.loli.net/2020/03/26/ebEGR24XO7mUS6Y.gif)
 
-
 ## Usage
 
-1. Clone代码到本地
-2. 打开Chrome的扩展程序，或者直接浏览器输入 `chrome://extensions/`
+### 谷歌商店
+
+[谷歌商店 Vision](https://chrome.google.com/webstore/detail/vision/ljjmbhojgemhgihjglfmegckbjnbhofg)
+
+### 源码安装
+
+1. Clone 代码到本地
+2. 打开 Chrome 的扩展程序，或者直接浏览器输入 `chrome://extensions/`
 3. 加载已解压的扩展程序
 4. 选择代码路径加载
 
