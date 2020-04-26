@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Vision",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "可以自动跳转来自微信的链接",
 	"author": "superiorlu",
 	"icons": {
@@ -18,7 +18,8 @@
 	"content_scripts": [
 		{
 			"matches": [
-				"https://weixin110.qq.com/*"
+				"https://weixin110.qq.com/*",
+				"https://support.weixin.qq.com/*"
 			],
 			"js": [
 				"lib/jquery-3.4.1.min.js",
