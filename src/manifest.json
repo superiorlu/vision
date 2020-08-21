@@ -1,34 +1,28 @@
 {
-	"manifest_version": 2,
-	"name": "Vision",
-	"version": "1.0.2",
-	"description": "可以自动跳转来自微信的链接",
-	"author": "superiorlu",
-	"icons": {
-		"16": "images/icon.png",
-		"48": "images/icon.png",
-		"96": "images/icon.png",
-		"128": "images/icon.png"
-	},
-	"page_action": {
-		"default_icon": "images/icon.png",
-		"default_title": "自动跳转来自微信的链接",
-		"default_popup": "popup.html"
-	},
-	"content_scripts": [
-		{
-			"matches": [
-				"https://weixin110.qq.com/*",
-				"https://support.weixin.qq.com/*"
-			],
-			"js": [
-				"lib/jquery-3.4.1.min.js",
-				"js/content-script.js"
-			],
-			"run_at": "document_start"
-		}
-	],
-	"permissions": [],
-	"homepage_url": "https://github.com/superiorlu/vision",
-	"web_accessible_resources": []
+  "manifest_version": 2,
+  "name": "Vision",
+  "version": "1.0.2",
+  "description": "可以自动跳转来自微信的链接",
+  "author": "superiorlu",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "96": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "page_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "自动跳转来自微信的链接",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://weixin110.qq.com/*", "https://support.weixin.qq.com/*"],
+      "js": ["js/content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [],
+  "homepage_url": "https://github.com/superiorlu/vision",
+  "web_accessible_resources": []
 }
