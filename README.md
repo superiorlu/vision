@@ -4,7 +4,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/superiorlu/vision.svg)](https://github.com/superiorlu/vision/blob/master/LICENSE)
 
-[![vision.gif](https://i.loli.net/2020/03/26/ebEGR24XO7mUS6Y.gif)](https://i.loli.net/2020/03/26/ebEGR24XO7mUS6Y.gif)
+[![vision.gif](https://i.loli.net/2020/08/21/vY3ljxMWPiuNams.gif)](https://i.loli.net/2020/08/21/vY3ljxMWPiuNams.gif)
 
 ## Usage
 
