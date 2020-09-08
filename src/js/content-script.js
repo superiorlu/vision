@@ -13,5 +13,8 @@ try {
 }
 
 if (jumpToHref !== undefined) {
-  window.location.href = jumpToHref;
+  let urlRegEx = /^(https?(\:\/\/))+(\w\-\.\/)?((?!weixin(110)?.qq.com).)*$/g;
+  if (jumpToHref.match(urlRegEx)) {
+    window.location.href = jumpToHref;
+  }
 }
