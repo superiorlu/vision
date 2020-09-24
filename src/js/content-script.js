@@ -1,4 +1,5 @@
 ﻿const host = window.location.origin;
+const pathName = window.location.pathname;
 let jumpToHref = undefined;
 
 try {
@@ -7,6 +8,12 @@ try {
   } else if (host === 'https://support.weixin.qq.com') {
     let url = document.body.getAttribute('url');
     jumpToHref = url.replace(/&amp;/g, '&');
+  } else if (host === 'https://docs.qq.com' && pathName === '/scenario/link.html') {
+    const reg = new RegExp('(^|&)url=([^&]*)(&|$)');
+    const url = window.location.search.substr(1).match(reg);
+    if (url != null) {
+      jumpToHref = unescape(url[2]);
+    }
   }
 } catch (e) {
   console.log(`[vision] has an error: ${e}`);
